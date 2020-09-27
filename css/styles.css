@@ -1,0 +1,335 @@
+body
+{
+	text-align:center;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+	font-family:'Montserrat',sans-serif;
+}
+
+h3
+{
+	padding-top:2rem;
+}
+
+p
+{
+	font-size:20px;
+    font-family:'Ubuntu';
+    color: grey;
+}
+
+hr
+{
+	background-color:#00bfff;
+}
+
+button:focus
+{
+	outline:0;
+}
+
+/* Containers */
+.container-fluid
+{
+	padding:7% 15%;
+}
+
+/*donate button*/
+.button
+{
+	display:inline-block;
+	border-radius:8px;
+	background-color:#ff3232;
+	border:none;
+	outline:none;
+	color:#FFFFFF;
+	text-align:center;
+	font-size:16px;
+	padding: 12px;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+.button span
+{
+	cursor: pointer;
+	display:inline-block;
+	position:relative;
+	transition: 0.5s;
+}
+
+.button span:after
+{
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right:-10px;
+	transition: 0.5s;
+}
+
+.button:hover span
+{
+	padding-right:25px;
+	color:white;
+}
+
+.button:hover span:after
+{
+	opacity:1;
+	right:0;
+}
+
+/* Navigation Bar */
+.navbar
+{
+    padding:15px;
+    font-size: 1.5rem;
+	background:#00bfff;
+}
+
+.navbar-brand
+{
+    font-size: 2.5rem;
+    font-family:'Ubuntu';
+    font-weight: bold;
+	color:white;
+}
+
+.custom-toggler .navbar-toggler-icon
+{ 
+    border-color:white;
+	background-color:white;
+	border-radius:10%;
+	width:50px;
+	height:50px;
+}
+
+.custom-toggler .navbar-toggler-icon
+{ 
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(0,191,500)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
+} 
+
+.nav-link
+{
+    font-family:'Ubuntu';
+    font-size:1.2rem;
+	color:white;
+}
+
+.nav-item
+{
+    padding: 0 18px;
+}
+
+/* Title Section */
+#title .container-fluid
+{
+	text-align: left;
+}
+
+blockquote
+{
+	background:white;
+	margin: 10px;
+	padding: 10px 20px;
+}
+
+blockquote small
+{
+	display: block;
+	font-size:25px;
+	color: brown;
+	text-align:right;
+}
+
+.title-image
+{
+	width:85%;
+	position:absolute;
+	margin-top:5%;
+	margin-left:35px;
+}
+
+@media (max-width:1028px)
+{
+	#title
+	{
+		text-align: center;
+	}
+	
+    .title-image
+	{
+		position: static;
+        transform: rotate(0);
+    }
+}
+
+/* Services Section */
+#testimonials
+{
+	background-color:#f1f1f1;
+}
+
+.carousel-indicators li 
+{
+    background-color: #0000ff;
+}
+
+.carousel-inner .container-fluid
+{
+	padding:3% 7%;
+}
+
+.testimonial-img
+{
+	width: 40%;
+	border-radius:5%;
+	margin:15px;
+}
+
+/* description-section */
+.description-section
+{
+	background:#F3E2C9;
+}
+
+.mycontent-left
+{
+	border-right:2px solid #333;
+	padding-right:20px;
+}
+
+.mycontent-left, .mycontent-right
+{
+	overflow:hidden;
+}
+
+@media screen and (max-width: 992px)
+{
+	.mycontent-left
+	{
+		border-right:none;
+		border-bottom:2px solid #333;
+		padding-bottom:30px;
+	}
+	
+	.mycontent-right
+	{
+		margin-top:30px;
+	}
+	
+	.pm, .cm
+	{
+		margin-left:100px;
+	}
+	
+	.donate-footer
+	{
+		position:fixed;
+		width:100%;
+	}
+}
+
+/* Features */
+#features
+{
+	position: relative;
+	z-index: 1;
+	background:white;
+	padding:-2%;
+}
+
+#features .container-fluid
+{
+	padding:5% 15%;
+}
+
+.feature-title
+{
+	font-size: 1.5rem;
+}
+
+.feature-box
+{
+    padding:4.5%;
+	align-content:center;
+}
+
+#features .card
+{
+	border-radius:5%;
+	width:70%;
+	height:220px;
+	margin-left:80px;
+	border:2px solid #00bfff;
+	background-color:#00bfff;
+}
+
+#features .card .button
+{
+	width:50%;
+	height:auto;
+	padding:6px;
+	vertical-align:center;
+	margin-top:12px;
+}
+
+#features .card img
+{
+	margin-top:10px;
+}
+
+.icon
+{
+	font-size: 3rem;
+	color:white;
+}
+
+.icon:hover
+{
+	color: #d789d7;
+}
+
+/* About us Section */
+#aboutus
+{
+	padding:100px;
+	background:#f3e6e3;
+}
+
+.about
+{
+	flex-wrap: center;
+	align-content: center;
+}
+
+.about-content
+{
+    font-size:30px;
+	font-family:'Ubuntu';
+    color:#000000;
+}
+
+/* Footer Section */
+.footer-section
+{
+	background:black;
+	bottom: 0;
+}
+
+/* Donation Form */
+.formdonate
+{
+	left:0;
+	right:0;
+	padding-top:50px;
+	padding-bottom:100px;
+}
+
+.formdonate .button
+{
+	width:100%;
+}
