@@ -19,7 +19,7 @@
             "send_sms" => true,
 			"phone"=>$Phone,
             "allow_repeated_payments" =>false,
-            "redirect_url" => "https://localhost/back_up_spark/thankyou.html"
+            "redirect_url" => "https://pmk09.github.io/LOGO/thankyou.html"
             )
         );
         $pay_url=$response['longurl'];
